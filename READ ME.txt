@@ -1,1 +1,1 @@
-This is my Code Louisville personal project - Knightstone MMORPG Game Website. Showcases basic information that encompasses story and character class choice. Ringbearer font is used as images as placeholder text, as well as Lord of the Rings Online screenshots as placeholder backgrounds.
+This is my Code Louisville personal project. Knightstone MMORPG Game Website. Showcases basic information that encompasses story and character class choice. Ringbearer font is used as images as placeholder text, as well as Lord of the Rings Online screenshots as placeholder backgrounds.
