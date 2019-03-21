@@ -1,0 +1,241 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+       v2.0 | 20110126
+       License: none (public domain)
+    */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    /* end css reset */
+
+section {
+  width:100%;
+  position: relative;
+}
+
+header {
+  position: relative;
+}
+/* Backgrounds */
+
+.background {
+  padding-bottom:65%;
+}
+.b1 {
+  background-image: url("../Images/Section-1-Background-e1.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#b2 {
+  background-image: url("../Images/Section-2-cropped-2.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#b3 {
+  background-image: url("../Images/Section-3-cropped.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 5px;
+
+}
+
+.content {
+  position: absolute;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+/* Transparent Div */
+
+div.transbox {
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  margin: 0 10%;
+  line-height: 1.6;
+  word-spacing: 5px;
+  font-size: 3vh;
+
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+.lore {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  width: 25%;
+}
+
+.world {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 30%;
+}
+
+
+.classes {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 30%;
+}
+
+/* Logo */
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Nav Bar */
+
+nav {
+  position:fixed;
+  background: rgba(0,0,0,.5);
+  color: white;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+}
+
+nav a:hover {
+  color: #81b8f1;
+}
+
+li {
+  display: inline-block;
+  width: 25%;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  float: left;
+  text-align: center;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+div {
+  font-family: 'Acme', sans-serif;
+}
+
+ul {
+  font-family: 'Acme', sans-serif;
+}
+
+main {
+  color: white;
+}
+
+/* Classes Section */
+
+.column {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+.knight .druid .archer {
+  display: inline-block;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+//Media Queries
+@media (min-width: 576px) { ... }
+@media (min-width: 768px) { ... }
+@media (min-width: 992px) { ... }
+@media (min-width: 1200px) { ... }
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
