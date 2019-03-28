@@ -63,7 +63,7 @@ header {
 }
 .b1 {
   background-image: url("../Images/Section-1-Background-e1.jpg");
-  height: 100%;
+
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
@@ -72,7 +72,6 @@ header {
 
 #b2 {
   background-image: url("../Images/Section-2-cropped-2.jpg");
-  height: 100%;
   background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
@@ -81,13 +80,11 @@ header {
 
 #b3 {
   background-image: url("../Images/Section-3-cropped.jpg");
-  height: 100%;
+
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 5px;
-
 }
 
 .content {
@@ -237,5 +234,13 @@ main {
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px){
+  .b1, #b2, #b3 {
+    background-size: auto;
+    background-position: top center;
+    background-attachment: fixed !important;
   }
 }
