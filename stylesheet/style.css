@@ -240,7 +240,7 @@ main {
 @media (max-width: 767px){
   .b1, #b2, #b3 {
     background-size: auto;
-    background-position: top center;
+    background-position: center;
     background-attachment: fixed !important;
   }
 }
